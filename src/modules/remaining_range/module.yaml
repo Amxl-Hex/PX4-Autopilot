@@ -1,0 +1,14 @@
+name: remaining_range
+type: estimator
+brief: "Estimates remaining flight range based on battery."
+description: |
+  Simple module that reads battery_status and estimates how far the vehicle can still fly.
+platforms:
+  - posix
+  - nuttx
+commands:
+  - name: start
+  - name: stop
+  - name: status
+dependencies:
+  - uORB::battery_status
