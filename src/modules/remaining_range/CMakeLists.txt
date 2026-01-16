@@ -1,9 +1,15 @@
+############################################################################
+#
+#   Copyright (c) 2025 Amal Cherian Jacob. All rights reserved.
+#
+############################################################################
+
 px4_add_module(
     MODULE modules__remaining_range
     MAIN remaining_range
-    STACK_MAIN 1200
-    STACK_PRIORITY SCHED_PRIORITY_DEFAULT
     SRCS remaining_range.cpp
+    MODULE_CONFIG
+        module.yaml
     DEPENDS
         platforms__common
 )
